@@ -1,7 +1,7 @@
 'use strict';
 
 var DateHandler = {
-  days: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+  days: ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'],
   GetDateFormat: function(dateString) {
     const dateObj = new Date(dateString);
     const dayOfWeek = this.days[dateObj.getDay()];
