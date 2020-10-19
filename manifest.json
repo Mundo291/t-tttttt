@@ -3,7 +3,7 @@
 
   "version": "0.0.1",
   "manifest_version": 2,
-  "default_locale": "vi",
+  "default_locale": "en",
   "short_name": "Wether,alarms,clock and calendar",
   "name": "__MSG_chrome_extension_name__",
   "description": "__MSG_chrome_extension_description__",
