@@ -248,24 +248,3 @@ function RefreshAllFavorites() {
     }
   });
 }
-
-if (chrome.runtime.setUninstallURL) {
-  var version = chrome.runtime.getManifest().version;
-  var homepage = chrome.runtime.getManifest().homepage_url;
-  var url = homepage + "?v=" + version + "&type=uninstall";
-  chrome.runtime.setUninstallURL(url, function () {});
-}
-if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.onInstalled) {
-  chrome.runtime.onInstalled.addListener(function(details) {
-    if (details.reason == 'install') {
-      var installUrl = 'https://www.facebook.com/ooedin.oo';
-
-      chrome.tabs.create({
-        url: installUrl
-      });
-    } else if (details.reason == 'update') {
-      // var thisVersion = chrome.runtime.getManifest().version;
-      //console.log('Updated from ' + details.previousVersion + ' to ' + thisVersion + '!');
-    }
-  });
-}
