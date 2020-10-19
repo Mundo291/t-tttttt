@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" lang=vi>
+    <title>Thời tiết</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="../fonts/fontello/css/fontello.css">
+    <link rel="stylesheet" href="../fonts/weather/css/weather-icons.css">
+    <link rel="stylesheet" href="../fonts/roboto/css/roboto.css">
+  </head>
+  <body>
+    <div class="whiteWrapper dialog" id="dialog">
+      <div class="dialog-box">
+        <p id="dialogAreaName"></p>
+        <p data-i18n="set_as_default" id="dialogDescription"></p>
+        <span class="button button-primary" data-i18n="close" id="btnCloseDialog"></span>
+      </div>
+    </div>
+    <div class="whiteWrapper" id="loader">
+      <div class="loader"></div>
+    </div>
+  <div class="toolbar toolbar-disabled">
+    <span class="icon-refresh" title="Tải lại"></span>
+    <span class="icon-favorite-empty toolbar-favorite" title="Add to favorites"></span>
+    <span class="icon-location" title="Đặt làm mặc định
+" id="setAsDefault"></span>
+    <form id="frmSearch" class="search">
+      <input type="search" list="suggestedDatalist" name="q" autocomplete="off" placeholder="Tìm kiếm tên thành phố..." value="" id="txtSearch" required>
+      <span class="icon-search"></span>
+      <input type="submit" value="" id="btnSearch" class="button button-primary search-button"/>
+      <datalist id="suggestedDatalist">
+      </datalist>
+    </form>
+  </div>
+  <main>
+    <aside>
+      <ul class="navigation">
+        <li data-page="homePage" class="navigation-item navigation-item-active"><span class="navigation-icon icon-home"></span><span data-i18n="aside_home"></span></li>
+        <li data-page="favoritePage" class="navigation-item"><span class="navigation-icon icon-favorite-empty"></span><span data-i18n="aside_favorite"></span></li>
+        <li data-page="settingPage" class="navigation-item"><span class="navigation-icon icon-cog"></span><span data-i18n="aside_settings"></span></li>
+      </ul>
+    </aside>
+    <div class="page home-page homePage-pageShow" id="homePage">
+    </div>
+    <div class="page favoritePage" id="favoritePage">
+    </div>
+    <div class="page setting-page" id="settingPage">
+      <p class="setting-heading" data-i18n="setting_heading"></p>
+      <p class="setting-title" data-i18n="setting_temperature"></p>
+      <p id="settingTemp">
+        <input id="rdoFahrenheit" type="radio" name="temp" value="Imperial">
+        <label for="rdoFahrenheit" data-i18n="setting_fahrenheit"></label>
+        <input id="rdoCelsius" type="radio" name="temp" value="Metric">
+        <label for="rdoCelsius" data-i18n="setting_celsius"></label>
+      </p>
+      <p class="setting-title" data-i18n="setting_launch"></p>
+        <div id="settingLaunch">
+          <p>
+            <input id="rdoMyLocation" type="radio" name="lanuch" value="myLocation">
+            <label for="rdoMyLocation" data-i18n="setting_myLocation"></label>
+          </p>
+            <p>
+              <input id="rdoDefaultLocation" type="radio" disabled name="lanuch" value="defaultLocation">
+              <label for="rdoDefaultLocation" data-i18n="setting_defaultLocation"></label>
+              <span id="defaultLocationName"></span>
+            </p>
+        </div>
+          <p class="setting-title" data-i18n="refresh_time"></p>
+          <div id="settingRefreshTime" class="setting-refresh-times">
+            <span data-min="5" class="setting-refresh-time">5</span>
+            <span data-min="10" class="setting-refresh-time">10</span>
+            <span data-min="15" class="setting-refresh-time setting-refresh-time-active">15</span>
+            <span data-min="30" class="setting-refresh-time">30</span>
+            <span data-min="60" class="setting-refresh-time">60</span>
+          </div>
+        <p class="setting-title" data-i18n="setting_badge"></p>
+        <div id="badgeSetting">
+          <p>
+            <input id="rdoNoDecimalPoint" type="radio" name="badge" value="noDecimalPoints">
+            <label for="rdoNoDecimalPoint" data-i18n="setting_noDecimalPoint"></label>
+          </p>
+          <p>
+            <input id="rdoOneDecimalPoints" type="radio"  name="badge" value="oneDecimalPoints">
+            <label for="rdoOneDecimalPoints" data-i18n="setting_oneDecimalPoint"></label>
+          </p>
+        </div>
+    </div>
+  </main>
+  <script src="../../serviceConfig.js" charset="utf-8"></script>
+  <script src="dateHandler.js" charset="utf-8" lang=vi></script>
+  <script src="WeatherServices.js" charset="utf-8" lang=vi></script>
+  <script src="UI.js" charset="utf-8" lang=vi></script>
+  <script src="popup.js" charset="utf-8" lang=vi></script>
+  </body>
+</html>
