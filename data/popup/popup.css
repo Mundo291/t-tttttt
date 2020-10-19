@@ -344,7 +344,7 @@ main {
 }
 
 .favoritePage-pageShow:empty::after {
-  content: 'There are no cities in the Favorites list';
+  content: 'Không có thành phố nào trong danh sách Yêu thích';
   color: #999;
   font-size: 300%;
   width: 400px;
