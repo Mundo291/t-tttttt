@@ -1,0 +1,101 @@
+{
+  "chrome_extension_name": {
+    "message": "Thời tiết , Đồng hồ báo thức và lịch"
+  },
+  "chrome_extension_description": {
+    "message": "Tiện ích bổ sung thời tiết sành điệu cho trình duyệt của bạn"
+  },
+  "browser_action_title": {
+    "message": "Thời tiết , Đồng hồ bác thức và lịch"
+  },
+  "aside_home": {
+    "message": "Home"
+  },
+  "aside_favorite": {
+    "message": "Mục yêu thich"
+  },
+  "aside_settings": {
+    "message": "Cài đặt"
+  },
+  "setting_heading": {
+    "message": "Tùy Chọn"
+  },
+  "setting_temperature": {
+    "message": "Hiển thị nhiệt độ :"
+  },
+  "setting_fahrenheit": {
+    "message": "Độ F"
+  },
+  "setting_celsius": {
+    "message": "Độ C"
+  },
+  "setting_launch": {
+    "message": "Khởi chạy vị trí"
+  },
+  "setting_myLocation": {
+    "message": "Tự động chọn vị trí của tôi"
+  },
+  "setting_defaultLocation": {
+    "message": "Vị trí mặc định"
+  },
+  "default_launch_heading": {
+    "message": "Vị trí mặc định"
+  },
+  "favorite_heading": {
+    "message": "Yêu thích"
+  },
+  "set_as_default": {
+    "message": "Đã được chọn làm vị trí mặc định"
+  },
+  "close": {
+    "message": "Đóng"
+  },
+  "added_to_favorite": {
+    "message": "Đã thêm vào mục yêu thích"
+  },
+  "has_already_been_added": {
+    "message": "Đã được thêm"
+  },
+  "wind": {
+    "message": "Gió"
+  },
+  "visibility": {
+    "message": "Tầm nhìn"
+  },
+  "humidity": {
+    "message": "Độ ẩm"
+  },
+  "pressure": {
+    "message": "Áp lực gió"
+  },
+  "daily": {
+    "message": "Các Ngày trong tuần"
+  },
+  "hourly": {
+    "message": "Thời tiết theo giờ"
+  },
+  "go": {
+    "message": "Tìm kiếm"
+  },
+  "refresh_time": {
+    "message": "Làm mới (Phút)"
+  },
+  "setting_badge": {
+    "message": "Hiển thị nhiệt độ theo dạng :"
+  },
+  "setting_noDecimalPoint": {
+    "message": "Làm tròn nhiệt độ"
+  },
+  "setting_oneDecimalPoint": {
+    "message": "Không làm tròn nhiệt độ"
+  },
+  "browserAction_context_menu": {
+    "message": "Làm mới thời tiết"
+  },
+  "no_search_result_title": {
+    "message": "Không có kết quả tìm kiếm..."
+  },
+  "no_search_result": {
+    "message": "Không tìm thấy tên thành phố"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "chrome_extension_name": {
+    "message": "Weather"
+  },
+  "chrome_extension_description": {
+    "message": "Stylish weather add-on for your browser."
+  },
+  "browser_action_title": {
+    "message": "Weather"
+  },
+  "aside_home": {
+    "message": "Home"
+  },
+  "aside_favorite": {
+    "message": "Favorite"
+  },
+  "aside_settings": {
+    "message": "Settings"
+  },
+  "setting_heading": {
+    "message": "Options"
+  },
+  "setting_temperature": {
+    "message": "Show temperature in:"
+  },
+  "setting_fahrenheit": {
+    "message": "Fahrenheit"
+  },
+  "setting_celsius": {
+    "message": "Celsius"
+  },
+  "setting_launch": {
+    "message": "Launch Location"
+  },
+  "setting_myLocation": {
+    "message": "Always detect my location"
+  },
+  "setting_defaultLocation": {
+    "message": "Default location"
+  },
+  "default_launch_heading": {
+    "message": "Default Location"
+  },
+  "favorite_heading": {
+    "message": "Favorites"
+  },
+  "set_as_default": {
+    "message": "Selected as default area"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "added_to_favorite": {
+    "message": "Added to favorites"
+  },
+  "has_already_been_added": {
+    "message": "Has already been added"
+  },
+  "wind": {
+    "message": "Wind"
+  },
+  "visibility": {
+    "message": "Visibility"
+  },
+  "humidity": {
+    "message": "Humidity"
+  },
+  "pressure": {
+    "message": "Pressure"
+  },
+  "daily": {
+    "message": "Daily"
+  },
+  "hourly": {
+    "message": "Hourly"
+  },
+  "go": {
+    "message": "Go"
+  },
+  "refresh_time": {
+    "message": "Refresh Time(by minutes)"
+  },
+  "setting_badge": {
+    "message": "Badge Decimal Points"
+  },
+  "setting_noDecimalPoint": {
+    "message": "No decimal point"
+  },
+  "setting_oneDecimalPoint": {
+    "message": "One decimal point"
+  },
+  "browserAction_context_menu": {
+    "message": "Refresh Weather"
+  },
+  "no_search_result_title": {
+    "message": "No Search Result"
+  },
+  "no_search_result": {
+    "message": "Such a city was not found."
+  }
+}
